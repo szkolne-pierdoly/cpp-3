@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+  <div class="content">
+    <div class="page-title">Notatki: C++ część 3</div>
+    <div class="text-x-small">Wykonanie i odpowiedzi na pytania opracowane przez Nikodema Okroj za pomocą źródeł dostępnych w pliku pdf oraz internecie. &copy 2023 - Wszelkie prawa zastrzeżone</div>
+    <div class="text-x-small">Design: Google Material Design Components v2</div>
+
+    <div class="separator-horizontal"></div>
+
+    <div class="padding-container">
+      <div class="subtitle"><b>Pytanie 1:</b> Podaj definicję algorytmu.</div>
+      <div class="padding-container">
+        <p class="text-strong padding-container">Algorytm to zestaw kroków lub procedur, które określają, jak wykonać określone zadanie lub rozwiązać problem.</p>
+        <p class="text-body padding-container">Algorytmy są używane przeważnie w informatyce i matematyce do modelowania procesów obliczeniowych. W skrócie, algorytm to szczegółowy plan działania, który określa kolejność i sposób wykonywania określonych działań, aby osiągnąć pożądany wynik.</p>
+      </div>
+
+      <div class="subtitle"><b>Pytanie 2:</b> Podaj metody i sposoby przedstawienia algorytmów.</div>
+      <div class="padding-container">
+        <p class="text-strong">Algorytmy mogą być zapisywane w formie słownej, graficznej lub symbolicznej i są powszechnie stosowane w programowaniu komputerowym, sztucznej inteligencji, analizie danych, kryptografii i wielu innych dziedzinach.</p>
+      </div>
+
+      <div class="subtitle"><b>Pytanie 3:</b> Omów cechy poprawnego algorytmu.</div>
+      <div class="padding-container">
+        <p class="text-strong">Poprawny algorytm powinien posiadać następujące cechy:</p>
+        <ol>
+          <li>Dokładność: Algorytm powinien precyzyjnie opisywać, jakie kroki należy podjąć, aby rozwiązać problem.</li>
+          <li>Efektywność: Algorytm powinien być efektywny, czyli powinien rozwiązywać problem w sposób zoptymalizowany, tzn. z minimalnym zużyciem zasobów, takich jak czas, pamięć czy procesor.</li>
+          <li>Jednoznaczność: Algorytm powinien być jednoznaczny, tzn. każdy krok powinien być zrozumiały i niepodważalny.</li>
+          <li>Możliwość implementacji: Algorytm powinien być implementowalny, czyli powinien być możliwy do realizacji w wybranym języku programowania lub środowisku obliczeniowym.</li>
+          <li>Uniwersalność: Algorytm powinien mieć zastosowanie w różnych przypadkach, a nie tylko w jednym, specyficznym przypadku.</li>
+          <li>Odporność na błędy: Algorytm powinien być odporny na błędy, tzn. powinien umożliwiać wykrycie i naprawienie błędów w procesie działania.</li>
+          <li>Czytelność: Algorytm powinien być czytelny i zrozumiały dla innych programistów, którzy będą pracować z nim w przyszłości.</li>
+        </ol>
+      </div>
+
+      <div class="subtitle"><b>Pytanie 4:</b> Scharakteryzuj etapy powstawania algorytmu.</div>
+      <div class="padding-container">
+        <p class="text-strong">Etapy powstawania algorytmu są następujące:</p>
+        <ol>
+          <li>Definicja problemu - W pierwszej fazie należy dokładnie zdefiniować problem, który chcemy rozwiązać przy pomocy algorytmu. Należy precyzyjnie określić wejście, wyjście, ograniczenia i cele algorytmu.</li>
+          <li>Projektowanie - W tej fazie projektujemy algorytm. Możemy wykorzystać różne narzędzia i metody, takie jak diagramy przepływu, pseudokod, czy algorytmy opisane słowami.</li>
+          <li>Implementacja - W tej fazie algorytm jest przetwarzany na kod, który może być wykonywany przez komputer. Implementacja powinna być zgodna z projektem algorytmu i uwzględniać wszystkie wymagania i ograniczenia.</li>
+          <li>Testowanie - W tej fazie algorytm jest testowany, aby sprawdzić, czy działa zgodnie z oczekiwaniami i spełnia wymagania. Testowanie może być wykonane ręcznie lub z wykorzystaniem narzędzi automatyzujących.</li>
+          <li>Optymalizacja - W tej fazie algorytm jest optymalizowany pod względem czasu działania, zużycia pamięci i innych wskaźników wydajnościowych. Można wykorzystać różne techniki optymalizacyjne, takie jak użycie bardziej efektywnych struktur danych, czy poprawa algorytmu.</li>
+          <li>Wdrożenie - W tej fazie algorytm jest wdrażany do produkcji lub używany w celach naukowych lub badawczych. Wdrożenie może wymagać integracji z innymi systemami lub narzędziami.</li>
+          <li>Utrzymanie - W tej fazie algorytm jest utrzymywany przez cały okres jego użytkowania. Może to wymagać poprawiania błędów, aktualizacji lub zmian w algorytmie w odpowiedzi na zmieniające się wymagania.</li>
+        </ol>
+      </div>
+
+      <div class="subtitle"><b>Pytanie 5:</b> Omów sposoby przedstawiania algorytmu.</div>
+      <div class="padding-container">
+        <p class="text-strong">Algorytmy można przedstawiać na różne sposoby, w zależności od potrzeb i celów. Oto kilka sposobów przedstawiania algorytmów:</p>
+        <ol>
+          <li>Opis słowny: algorytm może być przedstawiony w postaci prostego opisu słownego, który krok po kroku wyjaśnia, jakie czynności należy wykonać, aby osiągnąć dany cel.</li>
+          <li>Diagramy przepływu: algorytm może być przedstawiony w postaci diagramu przepływu, który przedstawia sekwencję działań w formie struktury graficznej. Taki diagram przedstawia czynności w sposób chronologiczny, a strzałki między krokami reprezentują przepływ sterowania.</li>
+          <li>Pseudokod: algorytm może być przedstawiony w postaci pseudokodu, który jest językiem programowania o bardziej formalnej strukturze niż opis słowny, ale nie tak skomplikowanym jak kod programu. Pseudokod jest często stosowany w celu zaplanowania algorytmów lub jako punkt wyjścia do tworzenia kodu programu.</li>
+          <li>Implementacja w konkretnym języku programowania: algorytm może być przedstawiony w postaci pełnego kodu programu napisanego w konkretnym języku programowania, który można uruchomić na komputerze.</li>
+        </ol>
+      </div>
+
+      <div class="subtitle"><b>Pytanie 6:</b> Z jakich elementów składa się specyfikacja problemu?</div>
+      <div class="padding-container">
+        <p class="text-strong">Specyfikacja problemu w algorytmach składa się z następujących elementów:</p>
+        <ol>
+          <li>Opis problemu - przedstawienie zagadnienia, które algorytm ma rozwiązać.</li>
+          <li>Dane wejściowe - informacje, które algorytm otrzymuje na wejściu, a które są niezbędne do rozwiązania problemu.</li>
+          <li>Dane wyjściowe - wynik działania algorytmu, czyli informacje, które są zwracane przez algorytm po rozwiązaniu problemu.</li>
+          <li>Przykłady - konkretne przykłady problemów i ich rozwiązań, które pomagają zrozumieć, jak algorytm powinien działać.</li>
+          <li>Wymagania - określenie warunków, jakie muszą zostać spełnione przez algorytm, np. czas wykonania, pamięć użyta przez algorytm, dokładność wyniku.</li>
+          <li>Analiza złożoności - ocena trudności problemu i oszacowanie, jak szybko algorytm powinien działać.</li>
+        </ol>
+      </div>
+
+      <div class="subtitle"><b>Pytanie 7:</b> Określ co nazywamy czynnościami, danymi a co wynikami.</div>
+      <div class="padding-container">
+        <p class="text-strong">Czynności to poszczególne kroki, które algorytm wykonuje w celu rozwiązania problemu.</p>
+        <p class="text-strong">Dane to informacje, na których algorytm operuje i które są potrzebne do rozwiązania problemu. Mogą to być liczby, napisy, tablice, struktury danych itp.</p>
+        <p class="text-strong">Wyniki to ostateczne efekty działania algorytmu, czyli informacje, które algorytm zwraca po zakończeniu działania.</p>
+        <p class="text-strong">Przykłady:</p>
+
+        <div class="padding-container">
+          <table class="page-table">
+            <tr>
+              <th>Czynności</th>
+              <th>Dane</th>
+              <th>Wyniki</th>
+            </tr>
+            <tr>
+              <td>wczytaj dane</td>
+              <td>liczba całkowita</td>
+              <td>napis</td>
+            </tr>
+            <tr>
+              <td>wykonaj operację na danych</td>
+              <td>struktura danych (np. obiekt lub drzewo)</td>
+              <td>liczba zmiennoprzecinkowa</td>
+            </tr>
+            <tr>
+              <td>zapisz wynik</td>
+              <td>tablica napisów</td>
+              <td>porównanie</td>
+            </tr>
+          </table>
+        </div>
+        <p class="text-strong">Wyjaśnienie:</p>
+        <div class="padding-container">
+          <div class="text-body-large"><b>Czynności</b> opisują co algorytm robi. Są różne w zależności od konkretnego problemu, który algorytm rozwiązuje. stanowią kroki algorytmu które są wykonywane w odpowiedniej kolejności.</div>
+          <div class="text-body-large"><b>Dane</b> są to informację na których algorytm operuje i wykonuje obliczenia. Są niezbędne do rozwiązania problemu. mogą mieć rożną postać w zależności od problemu który algorytm rozwiązuje.</div>
+          <div class="text-body-large"><b>Wyniki</b> są to gotowe, obliczone i przetworzone w sposób opisany w algorytmie. Są efektem działania algorytmu. Algorytm zwraca je po zakończeniu pracy. Mają różną postać w zależności od problemu który rozwiązuje algorytm.</div>
+        </div>
+
+        <br/>
+
+        <div class="subtitle"><b>Pytanie 8:</b> Wyjaśnij co zawiera program komputerowy i jakie wartości charakteryzują opis obiektu.</div>
+        <div class="padding-container">
+          <p class="text-body-large"><b>Program komputerowy</b> to zbiór instrukcji, które określają jak komputer ma wykonać pewne zadanie. Program komputerowy składa się z elementów takich jak: zmienne, stałe, operatory, funkcje, pętle, warunki i inne. Każdy z tych elementów ma swoją rolę i znaczenie w programie.</p>
+          <p class="text-body-large"><b>Obiekt</b> to pojęcie używane w programowaniu obiektowym, które polega na tworzeniu modeli rzeczywistości za pomocą klas i instancji. Klasa to szablon lub wzorzec, który definiuje cechy i zachowania obiektu. Instancja to konkretny egzemplarz klasy. Obiekt charakteryzuje się wartościami programu takimi jak: atrybuty i metody.</p>
+          <p class="text-body-large"><b>Atrybuty</b> to zmienne związane z obiektem, które przechowują informacje o jego stanie lub właściwościach. Na przykład obiekt reprezentujący samochód może mieć atrybuty takie jak: marka, model, kolor czy rok produkcji.</p>
+          <p class="text-body-large"><b>Metody</b> to funkcje związane z obiektem, które określają jak obiekt może się zachowywać lub co może robić. Na przykład obiekt reprezentujący samochód może mieć metody takie jak: jechać, hamować czy tankować.</p>
+        </div>
+
+        <div class="subtitle"><b>Pytanie 9:</b> Podaj rodzaje i omów znaczenie symboli stosowanych w schematach blokowych.</div>
+        <div class="padding-container">
+          <p class="text-body-large">Schemat blokowy to rodzaj diagramu, który przedstawia graficznie kroki, sekwencje i decyzje dotyczące procesu lub przepływu pracy. Schematy blokowe używają standardowych symboli i definicji, aby w sposób wizualny opisać poszczególne elementy procesu i ich zależności . Schematy blokowe mogą być przydatne do dokumentowania, upraszczania, organizowania i analizowania procesów w różnych dziedzinach i branżach.</p>
+          <p class="text-strong-large">Istnieje wiele różnych rodzajów symboli używanych w schematach blokowych, ale najczęściej spotykane to:</p>
+          <ol>
+            <li>Strzałka - wskazuje powiązania między blokami i ich kierunek.</li>
+            <li>Terminator - służy do oznaczania punktu początkowego lub końcowego w procesie schematu.</li>
+            <li>Proces - najczęstszy element schematu blokowego, który wskazuje etap procesu.</li>
+            <li>Decyzja - przedstawia punkt decyzyjny lub warunek logiczny w procesie schematu. Ma zwykle kształt diamentu z dwoma lub więcej strzałkami wyjściowymi oznaczonymi tak/nie lub prawda/fałsz.</li>
+            <li>Wejście/wyjście - reprezentuje dane wejściowe lub wyjściowe dla danego kroku procesu. Może mieć kształt prostokąta z zaokrąglonymi rogami lub równoległoboku.</li>
+          </ol>
+          <p class="text-strong">Oprócz tych podstawowych symboli istnieją również inne symbole specjalne dla różnych typów schematów blokowych, takich jak schematy programistyczne czy biznesowe. Niektóre z nich to:</p>
+          <ol>
+            <li>Podproces - pokazuje podproces lub odniesienie do innego schematu blokowego. Ma kształt prostokąta z podwójnymi liniami bocznymi i może zawierać numer identyfikacyjny podprocesu.</li>
+            <li>Dokument - oznacza dokument generowany lub używany przez dany krok procesu. Ma kształt prostokąta z falistym dolnym brzegiem.</li>
+            <li>Baza danych - symbolizuje bazę danych używaną lub modyfikowaną przez dany krok procesu. Ma kształt cylindra poziomego.</li>
+          </ol>
+          <p class="text-body">Aby utworzyć schemat blokowy online, można skorzystać z narzędzi takich jak Miro czy Aspose.Diagram . Te narzędzia umożliwiają łatwe tworzenie i edytowanie schematów blokowych za pomocą gotowych szablonów i bibliotek symboli. Można również współpracować nad schematami blokowymi online z innymi osobami i udostępniać je za pomocą linków lub plików obrazów.</p>
+          <p class="text-strong">Schematy blokowe są przydatnym sposobem na przedstawianie informacji o procesach w sposób przejrzysty i logiczny. Aby stworzyć skuteczny schemat blokowy, należy pamiętać o kilku ważnych zasadach:</p>
+          <ol>
+            <li>Zdefiniuj cel i zakres swojego schematu blokowego przed rozpoczęciem rysowania.</li>
+            <li>Używaj odpowiednich symboli dla każdego elementu procesu i unikaj nadmiernego stosowania symboli specjalnych.</li>
+            <li>Upewnij się, że każdy symbol ma jednoznaczne znaczenie i etykietę opisową.</li>
+            <li>Zachowaj spójność stylu i formatowania swojego schematu blokowego na wszystkich stronach lub segmentach.</li>
+            <li>Sprawdź poprawność logiczną swojego schematu blokowego od początku do końca.</li>
+          </ol>
+        </div>
+
+        <div class="subtitle"><b>Pytanie 10:</b> Wyjaśnij zasady rysowania schematów blokowych.</div>
+        <div class="padding-container">
+          <p class="text-body-large">Schematy blokowe są graficznym sposobem przedstawiania algorytmów lub procesów. Są one złożone z prostych kształtów geometrycznych, takich jak prostokąty, romby, owale i strzałki, które reprezentują kolejne kroki algorytmu lub procesu. Aby poprawnie rysować schematy blokowe, należy przestrzegać następujących zasad:</p>
+          <ul class="dashed">
+            <li>Każdy schemat blokowy powinien mieć jeden punkt startu i jeden punkt końca. Punkty te są oznaczane przez owale z napisami START i STOP lub podobnymi słowami.</li>
+            <li>
+              Każdy krok algorytmu lub procesu powinien być reprezentowany przez jeden blok. Bloki mogą mieć różne kształty w zależności od rodzaju kroku. Na przykład:
+              <ul class="dashed">
+                <li>Prostokąty oznaczają operacje lub czynności wykonywane przez algorytm lub proces.</li>
+                <li>Romby oznaczają decyzje lub warunki logiczne, które prowadzą do różnych ścieżek wykonania algorytmu lub procesu. Romb powinien mieć co najmniej dwie strzałki wychodzące z niego i każda strzałka powinna być opisana przez etykietę TAK lub NIE albo innymi słowami określającymi wynik warunku.</li>
+                <li>Owale oznaczają wejścia lub wyjścia danych do lub z algorytmu lub procesu. Owale mogą być połączone ze strzałkami wskazującymi kierunek przepływu danych.</li>
+              </ul>
+            </li>
+            <li>Bloki powinny być połączone ze sobą za pomocą strzałek wskazujących kierunek wykonania algorytmu lub procesu. Strzałki nie powinny się krzyżować ani tworzyć pętli bez rombów decyzyjnych.</li>
+            <li>Każdy schemat blokowy powinien być czytelny i zrozumiały dla osoby oglądającej go. Bloki powinny być odpowiednio rozmieszczone na stronie i opisane krótkimi i jasnymi słowami. Schemat blokowy nie powinien być zbyt skomplikowany ani zawierać zbędnych szczegółów.</li>
+          </ul>
+        </div>
+
+        <div class="subtitle"><b>Pytanie 11:</b> Podaj i omów podział algorytmów.</div>
+        <div class="padding-container">
+          <p class="text-body-large">Podział algorytmów można dokonać według różnych kryteriów. Jednym z nich jest sposób realizacji algorytmu przez komputer. Wyróżnia się wtedy algorytmy sekwencyjne i równoległe. Algorytmy sekwencyjne są wykonywane krok po kroku przez jeden procesor lub rdzeń. Algorytmy równoległe są wykonywane jednocześnie przez wiele procesorów lub rdzeni, które współpracują ze sobą i wymieniają dane.</p>
+          <p class="text-body">Innym kryterium podziału algorytmów jest złożoność obliczeniowa, czyli ilość zasobów (czasu i pamięci) potrzebnych do wykonania algorytmu w zależności od wielkości danych wejściowych. Wyróżnia się wtedy algorytmy o złożoności stałej, liniowej, logarytmicznej, liniowo-logarytmicznej, kwadratowej, wielomianowej, wykładniczej i innych.</p>
+          <p class="text-body">Kolejnym kryterium podziału algorytmów jest sposób rozwiązywania problemu. Wyróżnia się wtedy algorytmy deterministyczne i niedeterministyczne. Algorytmy deterministyczne są takie, które dla tych samych danych wejściowych zawsze dają te same wyniki i wykonują te same operacje. Algorytmy niedeterministyczne są takie, które dla tych samych danych wejściowych mogą dawać różne wyniki lub wykonują losowe operacje.</p>
+        </div>
+
+        <div class="subtitle"><b>Pytanie 12:</b> Omów różne rodzaje złożoności programów.</div>
+        <div class="padding-container">
+          <p class="text-body-large">Złożoność programów to miara tego, jak wiele zasobów komputerowych potrzeba do wykonania danego zadania. Złożoność programów można podzielić na kilka rodzajów w zależności od tego, co się bierze pod uwagę.</p>
+          <p class="text-body">Jednym z rodzajów jest złożoność czasowa, która określa liczbę operacji dominujących, takich jak porównania, przypisania czy obliczenia matematyczne, które program musi wykonać w zależności od rozmiaru danych wejściowych. Złożoność czasowa ma wpływ na szybkość działania programu i jego efektywność.</p>
+          <p class="text-body">Innym rodzajem jest złożoność pamięciowa, która określa ilość pamięci komputerowej, która jest zajmowana przez program podczas jego działania. Złożoność pamięciowa ma wpływ na zużycie zasobów komputerowych i możliwość uruchomienia programu na danym sprzęcie.</p>
+          <p class="text-body">Złożoności czasową i pamięciową można analizować pod kątem różnych przypadków: oczekiwanego, pesymistycznego i optymistycznego. Przypadek oczekiwany zakłada typowe dane wejściowe dla danego problemu. Przypadek pesymistyczny zakłada najgorsze możliwe dane wejściowe dla danego problemu. Przypadek optymistyczny zakłada najlepsze możliwe dane wejściowe dla danego problemu.</p>
+          <p class="text-body">Do opisywania złożoności programów używa się notacji asymptotycznej, która pomaga porównywać różne algorytmy i ich zachowanie dla dużych rozmiarów danych wejściowych. Najczęściej stosowanymi notacjami są O (duże O), Omega i Theta. Notacja O określa górne ograniczenie funkcji złożoności w sensie asymptotycznym. Notacja Omega określa dolne ograniczenie funkcji złożoności w sensie asymptotycznym. Notacja Theta określa dokładną funkcję złożoności w sensie asymptotycznym.</p>
+          <p class="text-strong">Znając rodzaje i notacje złożoności programów można lepiej zaprojektować i ocenić algorytmy oraz wybrać najbardziej odpowiednie rozwiązanie dla danego problemu obliczeniowego.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
